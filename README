@@ -1,0 +1,25 @@
+In order to run the script, cd into this folder, and type 'make'.
+
+Adjust the initial condition in "initial.in" to your liking.
+Keep in mind that internally, the code works with G = 1.
+The input is entered in following order: 
+
+    mass x0 y0 vx0 vy0
+    
+Example: the following inputs will create loop orbits.
+
+    1 2 0 0 0.5
+or
+    1 3 0 0 -1
+
+Example: the following inputs will create box orbits.
+
+    1 2 0 0 1
+or
+    1 1.1 0 0 1
+    
+Then run the Orbit.py script. t_begin, t_end and dt are manually adjusted inside the script.
+
+The output is ordered as such:
+
+    time energy Lz mass x y vx vy
